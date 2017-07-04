@@ -1,0 +1,8 @@
+# read the XML data and store it in the data frame df.
+> install.packages("XML")
+
+library(XML)
+library(methods)
+
+xmldf <- xmlParse(file = "iris.xml")
+xmldf
