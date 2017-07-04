@@ -1,0 +1,2 @@
+# Read 20 .dat files into a single dataframe
+df <- c(read.delim2("001.dat"),read.delim2("002.dat"),read.delim2("003.dat"),read.delim2("004.dat"),read.delim2("005.dat"),read.delim2("006.dat"),read.delim2("007.dat"),read.delim2("008.dat"),read.delim2("009.dat"),read.delim2("010.dat"),read.delim2("011.dat"),read.delim2("012.dat"),read.delim2("013.dat"),read.delim2("014.dat"),read.delim2("015.dat"),read.delim2("016.dat"),read.delim2("017.dat"),read.delim2("018.dat"),read.delim2("019.dat"),read.delim2("020.dat"))
