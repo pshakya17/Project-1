@@ -11,7 +11,8 @@ xmldf
 # Convert the above file to JSON
 
 library(jsonlite)
-prettify(toJSON(xmlToList(xmldf)) , indent = 1)
+iris_data <- prettify(toJSON(xmlToList(xmldf)) , indent = 1)
+iris_data
 
 # Output
 {
