@@ -23,3 +23,8 @@ select(a, 1:5)
 
 filter_iris <- filter(a, Species=="virginica")
 
+
+
+
+#Print the summary of iris_data
+summary(iris_df)
