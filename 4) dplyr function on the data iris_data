@@ -1,0 +1,25 @@
+# Implement select, match, filter, arrange, rename, and mutate function on the iris_data.
+
+library(XML)
+library(methods)
+
+xmldf <- xmlParse(file = "iris.xml")
+
+xmlToList(xmldf)
+
+library(RJSONIO)
+iris_json <- toJSON(xmlToList(xmldf))
+
+library(jsonlite)
+iris_data <- prettify(toJSON(xmlToList(xmldf)) , indent = 1)
+
+library(dplyr)
+select(iris_data, width)
+
+iris_df <- fromJSON(iris_data , simplifyDataFrame = TRUE)
+
+a <- bind_rows(iris_df)
+select(a, 1:5)
+
+filter_iris <- filter(a, Species=="virginica")
+
